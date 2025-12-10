@@ -14,26 +14,23 @@
 - 如需示例截图，可在 UI 运行后自行截取放入仓库的 `docs/` 或 `assets/`。
 
 ## 环境
-- Python 3.13（已在 `D:\code\translator\venv` 里测试）
-- FFmpeg 已在系统 PATH。
-- GPU 可用时自动走 CUDA。
+- Python 3.10+（建议 3.10/3.11/3.12/3.13）
+- FFmpeg 在系统 PATH（或自行配置绝对路径）。
+- 有 GPU 时自动使用 CUDA；无 GPU 也可 CPU 运行。
 
 ## 安装
-```powershell
-# 可选：进入项目目录
-cd D:\code\Video-Trans-Pilot
-
-# 激活已有虚拟环境
-D:\code\translator\venv\Scripts\activate
-
-# 安装依赖（包含 CUDA 版 torch）
+```bash
+git clone https://github.com/icenturyw/video-trans-plot.git
+cd video-trans-plot
+python -m venv .venv
+source .venv/bin/activate  # Windows 使用 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
 首次运行会自动下载 Whisper 和翻译模型，取决于网络，需耐心等待。
 
 ## 运行
-```powershell
+```bash
 python -m src.app
 ```
 
