@@ -1,6 +1,6 @@
-# Video-Trans-Pilot
+# video-trans-plot
 
-本地 Whisper + FFmpeg 的批量视频翻译器（PySide6 GUI）。
+本地 Whisper + FFmpeg 的批量视频翻译工具（PySide6 GUI）。
 
 ## 功能
 - 批量选择视频，自动转写 → 翻译 → 导出字幕 → 烧录字幕。
